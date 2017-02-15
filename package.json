@@ -1,6 +1,6 @@
 {
   "name": "angular-select3",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Angular Directive Select",
   "repository": " git@github.com:AlexPetrov7311/angular-select.git",
   "main": "dist/directive.js",
