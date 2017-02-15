@@ -1,0 +1,93 @@
+/*!
+ * angular-directive-boilerplate
+ * 
+ * Version: 0.0.8 - 2017-02-15T07:47:10.867Z
+ * License: MIT
+ */
+
+
+@import url("http://fonts.googleapis.com/css?family=Lato");
+.select-hidden {
+  display: none;
+  padding-right: 10px;
+  visibility: hidden;
+}
+.select {
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  height: 40px;
+  position: relative;
+  width: 220px;
+}
+.select-styled {
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  background-color: #c0392b;
+  bottom: 0;
+  left: 0;
+  padding: 8px 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.2s ease-in;
+}
+.select-styled:after {
+  border: 7px solid transparent;
+  border-color: #ffffff transparent transparent transparent;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  width: 0;
+}
+.select-styled:hover {
+  background-color: #b83729;
+}
+.select-styled:active {
+  background-color: #ab3326;
+}
+.select-styled:active:after {
+  border-color: transparent transparent #ffffff transparent;
+  top: 9px;
+}
+.select-styled.active {
+  background-color: #ab3326;
+}
+.select-styled.active:after {
+  border-color: transparent transparent #ffffff transparent;
+  top: 9px;
+}
+.select-options {
+  background-color: #ab3326;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 999;
+}
+.select-options li {
+  -moz-transition: all 0.15s ease-in;
+  -o-transition: all 0.15s ease-in;
+  -webkit-transition: all 0.15s ease-in;
+  border-top: 1px solid #962d22;
+  margin: 0;
+  text-indent: 15px;
+  transition: all 0.15s ease-in;
+}
+.select-options li:hover {
+  background: #ffffff;
+  color: #c0392b;
+}
+.select-options li div {
+  padding: 12px 0;
+}
+.select-options li[rel="hide"] {
+  display: none;
+}

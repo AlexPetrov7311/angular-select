@@ -1,0 +1,95 @@
+// Color variables (appears count calculates by raw css)
+@color0: #ffffff; // Appears 7 times
+@color1: #ab3326; // Appears 4 times
+@color2: #c0392b; // Appears 2 times
+@color3: #b83729; // Appears 2 times
+
+@import url("http://fonts.googleapis.com/css?family=Lato");
+
+.select-hidden {
+  display: none;
+  padding-right: 10px;
+  visibility: hidden;
+}
+.select {
+  color: @color0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  height: 40px;
+  position: relative;
+  width: 220px;
+}
+
+.select-styled {
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  background-color: @color2;
+  bottom: 0;
+  left: 0;
+  padding: 8px 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.2s ease-in;
+  &:after {
+
+    border: 7px solid transparent;
+    border-color: @color0 transparent transparent transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    width: 0;
+  }
+  &:hover {
+    background-color: @color3;
+  }
+  &:active {
+    background-color: @color1;
+    &:after {
+      border-color: transparent transparent @color0 transparent;
+      top: 9px;
+    }
+  }
+}
+.select-styled.active {
+  background-color: @color1;
+  &:after {
+    border-color: transparent transparent @color0 transparent;
+    top: 9px;
+  }
+}
+.select-options {
+  background-color: @color1;
+  //display:  none;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 999;
+  li {
+    -moz-transition: all 0.15s ease-in;
+    -o-transition: all 0.15s ease-in;
+    -webkit-transition: all 0.15s ease-in;
+    border-top: 1px solid #962d22;
+    margin: 0;
+    text-indent: 15px;
+    transition: all 0.15s ease-in;
+    &:hover {
+      background: @color0;
+      color: @color2;
+    }
+    div{
+      padding: 12px 0;
+    }
+  }
+  li[rel="hide"] {
+    display: none;
+  }
+}

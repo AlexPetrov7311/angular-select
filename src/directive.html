@@ -1,0 +1,9 @@
+<div class="select" ng-init="hidenMenu= true;" ng-click="hidenMenu = false;console.log('show')" ng-mouseleave="hidenMenu = true;">
+  <div class="select-styled">{{[ placeholder,selected.display][(selected.display!=undefined)+0]}}</div>
+  <ul class="select-options" ng-hide="hidenMenu" ng-click="hidenMenu = true;">
+    <li rel="hide">{{placeholder}}</li>
+    <li rel="{{item.value}}" ng-repeat="item in menu">
+      <div ng-click="selectItem(item); $event.stopPropagation();">{{item.display}}</div>
+    </li>
+  </ul>
+</div>
