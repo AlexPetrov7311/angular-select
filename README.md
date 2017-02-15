@@ -15,10 +15,10 @@
 #### Install via NPM or bower
 
 ```shell
-npm install angular-select
+npm install angular-select3
 ```
 ```shell
-bower install angular-select
+bower install angular-select3
 ```
 
 ### License
