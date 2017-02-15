@@ -1,5 +1,7 @@
 # Select component to Angular
 
+![alt tag](https://raw.githubusercontent.com/AlexPetrov7311/angular-select/master/dropdown.png)
+
 
 #### Usage
 
@@ -13,11 +15,13 @@
 #### Install via NPM or bower
 
 ```shell
-npm install angular-directive-boilerplate
+npm install angular-select
 ```
 ```shell
-bower install angular-directive-boilerplate
+bower install angular-select
 ```
 
 ### License
 MIT
+
+

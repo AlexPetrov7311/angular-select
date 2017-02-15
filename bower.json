@@ -1,11 +1,11 @@
 {
-  "name": "angular-directive-template",
-  "version": "0.0.8",
+  "name": "angular-select",
+  "version": "0.0.1",
   "authors": [
-    "Mohsen Azimi <mazimi@apigee.com>"
+    "Alex Petrov <johnsilver7311@gmail.com>"
   ],
-  "description": "Angular Publishable Directive Template",
-  "main": "dist/directive.js, dist/directive.js",
+  "description": "Angular Publishable Directive Select",
+  "main": "dist/directive.js",
   "license": "MIT",
   "private": false,
   "ignore": [
